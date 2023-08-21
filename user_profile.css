@@ -1,0 +1,106 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #ffbf00;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Main content styles */
+.main {
+    min-height: calc(100vh - 80px); /* Adjust for header and footer heights */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* User info styles */
+.user-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.user-info img:hover {
+    transform: scale(1.1);
+}
+
+.user-info h2 {
+    margin: 10px 0;
+}
+
+/* User bio styles */
+.user-bio {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #777777;
+}
+
+/* Styles for the social media links */
+.social-links {
+    display: list-item;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.social-links label,
+.social-links input {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    background-color: #0077cc;
+}
